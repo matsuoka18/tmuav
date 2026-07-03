@@ -1,0 +1,419 @@
+body{
+    font-family:YakuHanJPs_Narrow,'Noto Serif JP', "Hiragino Mincho ProN", YuMincho, "Yu Mincho", "serif";
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+@media screen and (min-width: 900px) {
+/* ここに横幅が767pxより大きい時に発動するスタイルを記述 */
+.top{
+    position: fixed;
+    top:0;
+    left:0;
+    height:5vw;
+    width: 98vw;
+    padding: 1vw;
+    padding-top:0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px 5px #00000017;
+    z-index: 100;
+
+}
+
+.top .menus{
+    position:absolute;
+    right:5vw;
+    width:30vw;
+    text-align: right;
+}
+
+.top .menus p{
+    display: inline-block;
+    margin-left:10px;
+    margin-top:1vw;
+    border:1px solid black;
+    color: black;
+    height:3.5vw;
+    width:8vw;
+    text-align:center;
+    line-height: 3.5vw;
+    font-size:0.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top .menus p:hover{
+color:#4366B0;
+background-color: #4366b01f;
+border-color: #4366B0;
+font-weight: 700;
+    font-size:0.8vw;
+    height:3.5vw;
+    width:8vw;
+}
+.top h1{
+    margin: 0;
+    padding: 0;
+    vertical-align:top;
+    line-height: 3vw;
+    /*font-size: 22.5px;*/
+    font-size:2vw;
+    letter-spacing: 4px;
+
+    
+}
+
+.top small{
+    margin-left:1vw;
+    font-size:0.7vw;
+    letter-spacing: 0.5px;
+    color:rgb(58, 58, 58);
+    color:black;
+}
+
+.top img{
+    height:6vw;
+    width:auto;
+}
+.theme{
+    width:30vw;
+}
+.h{
+    display: none;
+    opacity: 0;
+}
+
+.photos{
+    position: relative;
+    top:-3vw;
+    width:100vw;
+    height: max-content;
+    z-index:0;
+}
+.photos img{
+    height:95h;
+    width:90vw;
+    margin-left: 5vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+}
+.photos .photo_status{
+    position: relative;
+    left:50%;
+    margin-left:-15px; /*球の個数で変化*/
+    
+}
+.photos .photo_status div{
+    width:10px;
+    height:10px;
+    border-radius: 100px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-left:2.5px;
+    margin-right:2.5px;
+}
+
+.about_us .our_photos{
+
+    width:min-content;
+    height:max-content;
+    /*padding:10px;*/
+    margin-left:5vw;
+    border-radius: 10px;
+    /*background-color: #4366B0;*/
+}
+
+.about_us .our_photos iframe{
+    width:35vw;
+    height:25vw;
+    outline:none;
+    border:none;
+    margin-bottom:-2.5vw;   
+}
+
+}
+@media screen and (max-width: 900px) {
+/* ここに横幅が767px以下の時に発動するスタイルを記述 */
+.top{
+    position: fixed;
+    top:0;
+    left:0;
+    height:10vw;
+    width: 98vw;
+    padding: 1vw;
+    padding-top:0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px 5px #00000017;
+    z-index: 100;
+
+}
+
+.top .menus{
+    position:absolute;
+    right:5vw;
+    width:20vw;
+    text-align: right;
+}
+
+.top .menus p{
+    position: absolute;
+    top:0;
+    display: inline-block;
+    margin-left:10px;
+    margin-top: 2vw;
+    border:1px solid black;
+    color: black;
+    height:7vw;
+    width:14vw;
+    text-align:center;
+    line-height:7vw;
+    font-size:2.5vw;
+}
+.top .menus p:hover{
+color:#4366B0;
+background-color: #4366b01f;
+border-color: #4366B0;
+font-weight: 700;
+font-size:2.5vw;
+height:7vw;
+width:14vw;
+}
+
+.top h1{
+    margin: 0;
+    padding: 0;
+    margin-top:0.5vw;
+    vertical-align: top;
+    line-height: 4vw;
+    height:8vw;
+    /*font-size: 22.5px;*/
+    font-size:4vw;
+    letter-spacing: 4px;
+}
+
+.top small{
+    margin-left:1vw;
+    padding-top:0.5vw;
+    font-size:1.4vw;
+    letter-spacing: 0.5px;
+    color:rgb(58, 58, 58);
+    color:black;
+}
+
+.top img{
+    height:10vw;
+    width:auto;
+}
+.theme{
+    width:60vw;
+}
+
+.v{
+    display: none;
+    opacity: 0;
+}
+.h{
+    position: absolute;
+    top:0;
+    right: 5vw;
+    display: block;
+    opacity: 1;
+    z-index: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.photos{
+    position: relative;
+    top:-3vw;
+    width:100vw;
+    height: max-content;
+    z-index:0;
+}
+.photos img{
+    height:90vh;
+    width:100vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: left;
+    opacity: 1;
+}
+.photos .photo_status{
+    position: relative;
+    left:50%;
+    margin-left:-15px; /*球の個数で変化*/
+    
+}
+.photos .photo_status div{
+    width:10px;
+    height:10px;
+    border-radius: 100px;
+    background-color: lightgray;
+    display: inline-block;
+    margin-left:2.5px;
+    margin-right:2.5px;
+}
+
+.about_us .our_photos{
+    width:min-content;
+    height:min-content;
+    /*padding:10px;*/
+    margin-left:0vw;
+    border-radius: 10px;
+    /*background-color: #4366B0;*/
+}
+
+.about_us .our_photos iframe{
+    width:80vw;
+    height:50vw;
+    outline:none;
+    border:none;
+    margin-bottom:-2.5vw;   
+}
+
+}
+
+
+.top div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+.center{
+    position: relative;
+    left:50%;
+    top:120px;
+    margin-left:-200px; 
+    width:400px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.center p{
+    text-align: center;
+    
+    height:20px;
+    font-size:15px;
+    font-weight:500;
+}
+.center div{
+    margin-top:20px ;
+}
+.center input{
+    margin-left:50px;
+    width:300px;
+    height:40px;
+    border:1px solid black;
+    border-radius: 0;
+}
+.center button{
+    margin-top:30px;
+    width:100px;
+    height:50px;
+    line-height: 50px;
+    margin-left:150px;
+    background-color: #4366B0;
+    border:none;
+    color:white;
+    font-size:10px;
+    letter-spacing: 1px;
+}
+
+.middle{
+    position: relative;
+    left:10vw;
+    top:-3vw;
+    width:80vw;
+}
+.middle h2{
+    /*border-left:10px solid #4366B0; */
+    color:#4366B0;
+    font-family: Arial, Helvetica, sans-serif;
+    /*border-bottom: 2px solid black;*/
+    font-size:70px;
+    letter-spacing: 4px;
+}
+.middle .top_news2{
+    margin-top: 200px;
+}
+
+.theme h2{
+    margin:0;
+    padding:0;
+    width: max-content;
+    display: inline-block;
+}
+.theme .b{
+    color:white;
+    -webkit-text-stroke: 1px #4366B0;
+}
+.theme h3{
+        margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news{
+    padding-top:30px;
+}
+.middle .top_news_body .block{
+    position:relative;
+    width:80vw; 
+    background-color: white;
+    margin:0;
+    margin-top:20px;
+    padding:0;
+    border: 1px solid rgb(213, 213, 213);
+}
+.middle .top_news_body .block:hover{
+background-color: #fafafa;
+}
+.middle .top_news_body .block img{
+    width:200px;
+    height:auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    vertical-align:top;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.middle .top_news_body .block h3{
+    display: inline-block;
+    margin:0;
+    padding:0;
+    font-size:20px;
+    line-height:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news_body .block p{
+    margin:0;
+    padding:0;
+    font-size:12.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news_body .block .block2{
+display: inline-block;
+padding-inline: 10px;
+}
+.about_us{
+    position: relative;
+    margin-top:30px;
+}
+
+.about_us p{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size:15px;
+}
+.about_us div{
+    display: inline-block;
+}
+
+.sns{
+    position:relative;
+    margin-top:30px;
+}
+.sns .sns_links{
+    display: inline-block;
+}
