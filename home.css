@@ -1,9 +1,155 @@
 body{
+    width:98vw;    
     font-family:YakuHanJPs_Narrow,'Noto Serif JP', "Hiragino Mincho ProN", YuMincho, "Yu Mincho", "serif";
     margin: 0;
     padding: 0;
     background-color: #fafafa;
 }
+.top div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+.center{
+    position: relative;
+    left:50%;
+    top:120px;
+    margin-left:-200px; 
+    width:400px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.center p{
+    text-align: center;
+    
+    height:20px;
+    font-size:15px;
+    font-weight:500;
+}
+.center div{
+    margin-top:20px ;
+}
+.center input{
+    margin-left:50px;
+    width:300px;
+    height:40px;
+    border:1px solid black;
+    border-radius: 0;
+}
+.center button{
+    margin-top:30px;
+    width:100px;
+    height:50px;
+    line-height: 50px;
+    margin-left:150px;
+    background-color: #4366B0;
+    border:none;
+    color:white;
+    font-size:10px;
+    letter-spacing: 1px;
+}
+
+.middle{
+    position: relative;
+    left:10vw;
+    top:-3vw;
+    width:80vw;
+}
+.middle h2{
+    
+    color:#4366B0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size:70px;
+    letter-spacing: 4px;
+}
+.middle .top_news2{
+ 
+}
+
+.theme h2{
+    margin:0;
+    padding:0;
+    width: max-content;
+    display: inline-block;
+}
+.theme .b{
+    color:white;
+    -webkit-text-stroke: 1px #4366B0;
+}
+.theme h3{
+        margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news{
+    padding-top:30px;
+}
+.middle .top_news_body .block{
+    position:relative;
+    width:80vw; 
+    background-color: white;
+    margin:0;
+    margin-top:20px;
+    padding:0;
+    border: 1px solid rgb(213, 213, 213);
+}
+.middle .top_news_body .block:hover{
+background-color: #fafafa;
+}
+.middle .top_news_body .block img{
+    width:200px;
+    height:auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    vertical-align:top;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.middle .top_news_body .block h3{
+    display: inline-block;
+    margin:0;
+    padding:0;
+    font-size:20px;
+    line-height:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news_body .block p{
+    margin:0;
+    padding:0;
+    font-size:12.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.middle .top_news_body .block .block2{
+display: inline-block;
+padding-inline: 10px;
+}
+.about_us{
+    position: relative;
+    margin-top:30px;
+}
+
+.about_us p{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size:15px;
+}
+.about_us div{
+    display: inline-block;
+}
+
+.sns{
+    position:relative;
+    margin-top:30px;
+}
+.sns .sns_links{
+    display: inline-block;
+}
+
 @media screen and (min-width: 900px) {
 /* ここに横幅が767pxより大きい時に発動するスタイルを記述 */
 .top{
@@ -11,7 +157,7 @@ body{
     top:0;
     left:0;
     height:5vw;
-    width: 98vw;
+    width: 96.8vw;
     padding: 1vw;
     padding-top:0;
     background-color: rgb(255, 255, 255);
@@ -84,7 +230,7 @@ font-weight: 700;
 .photos{
     position: relative;
     top:-3vw;
-    width:100vw;
+    width:97vw;
     height: max-content;
     z-index:0;
 }
@@ -100,6 +246,7 @@ font-weight: 700;
 .photos .photo_status{
     position: relative;
     left:50%;
+    width:max-content;
     margin-left:-15px; /*球の個数で変化*/
     
 }
@@ -129,6 +276,48 @@ font-weight: 700;
     outline:none;
     border:none;
     margin-bottom:-2.5vw;   
+}
+.middle2{
+margin-top:8vw;
+}
+
+.new h4{
+font-family: Arial, Helvetica, sans-serif;
+background-color: black;
+color: white;
+width:max-content;
+padding-left:1.5vw;
+padding-right:1.5vw;
+padding-top:1vw;
+padding-bottom:1vw;
+}
+
+.past h4{
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+width:80vw;
+font-size:3vw;
+text-align: center;
+margin-bottom:1vw;
+}
+.past .time_ta{
+    width:80vw;
+    text-align: center;
+}
+.past .time_ta p{
+    display: inline-block;
+    border-radius:100px;
+    background-color: #4366B0;
+    color:white;
+    font-weight:700;
+    width:max-content;
+    font-size:1.25vw;
+    width:6vw;
+    padding:0.5vw;
+    margin-left:0.2vw;
+    margin-right:0.2vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 }
@@ -273,147 +462,66 @@ width:14vw;
 }
 
 
-.top div{
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-
-
-
-.center{
-    position: relative;
-    left:50%;
-    top:120px;
-    margin-left:-200px; 
-    width:400px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.center p{
-    text-align: center;
-    
-    height:20px;
-    font-size:15px;
-    font-weight:500;
-}
-.center div{
-    margin-top:20px ;
-}
-.center input{
-    margin-left:50px;
-    width:300px;
-    height:40px;
-    border:1px solid black;
-    border-radius: 0;
-}
-.center button{
-    margin-top:30px;
-    width:100px;
-    height:50px;
-    line-height: 50px;
-    margin-left:150px;
-    background-color: #4366B0;
-    border:none;
-    color:white;
-    font-size:10px;
-    letter-spacing: 1px;
-}
-
-.middle{
-    position: relative;
-    left:10vw;
-    top:-3vw;
-    width:80vw;
-}
-.middle h2{
-    /*border-left:10px solid #4366B0; */
-    color:#4366B0;
-    font-family: Arial, Helvetica, sans-serif;
-    /*border-bottom: 2px solid black;*/
-    font-size:70px;
-    letter-spacing: 4px;
-}
-.middle .top_news2{
-    margin-top: 200px;
-}
-
-.theme h2{
+/*FOR read_news.html*/
+.news_body2{
+    width:100vw; /*調整する必要あり*/
     margin:0;
     padding:0;
-    width: max-content;
-    display: inline-block;
+    margin-left:-10vw;
 }
-.theme .b{
-    color:white;
-    -webkit-text-stroke: 1px #4366B0;
-}
-.theme h3{
-        margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.middle .top_news{
-    padding-top:30px;
-}
-.middle .top_news_body .block{
-    position:relative;
-    width:80vw; 
-    background-color: white;
-    margin:0;
-    margin-top:20px;
-    padding:0;
-    border: 1px solid rgb(213, 213, 213);
-}
-.middle .top_news_body .block:hover{
-background-color: #fafafa;
-}
-.middle .top_news_body .block img{
-    width:200px;
-    height:auto;
-    aspect-ratio: 16/9;
-    object-fit: contain;
-    vertical-align:top;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-.middle .top_news_body .block h3{
-    display: inline-block;
-    margin:0;
-    padding:0;
-    font-size:20px;
-    line-height:50px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.middle .top_news_body .block p{
-    margin:0;
-    padding:0;
-    font-size:12.5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.middle .top_news_body .block .block2{
+.news_body2 div{
 display: inline-block;
-padding-inline: 10px;
 }
-.about_us{
-    position: relative;
-    margin-top:30px;
-}
-
-.about_us p{
-    
+.block3{
+    width:30vw;
+    height:30vw;
+    margin:1vw;
+    padding:0;
+    border:1px solid lightgray;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    font-size:15px;
 }
-.about_us div{
-    display: inline-block;
+.block3 div{
+    display: block;
 }
-
-.sns{
-    position:relative;
-    margin-top:30px;
+.block3 img{
+    width:26vw;
+    height: 16vw;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    margin-left:2vw;
+    margin-top:1vw;
+    border-radius: 5px;
 }
-.sns .sns_links{
-    display: inline-block;
+.block3 .block2{
+    position: relative;
+    margin-left:2vw;
+}
+.block3 .block2 h3{
+    font-size:1.5vw;
+    height:1.5vw;
+    line-height: 1.5vw;
+    
+}
+.block3 .block2 .cate{
+    position: relative;
+    top:-0.2vw;
+    left:1vw;
+    color:white;
+    background-color: #4366B0; /*#b04343*/ /*#43b053*/
+    border-radius: 100px;
+    font-size: 0.75vw;
+    padding-bottom:0.75vw;
+    padding-top:0.75vw;
+    padding-right:1vw;
+    padding-left:1vw;
+}
+.block3 .block2 .time{
+    position: absolute;
+    top:0vw;
+    right:1vw;
+    color:gray;
+    border-radius: 100px;
+    font-size: 1vw;
 }

@@ -8,11 +8,15 @@ function photo_change(){
     document.getElementById("cir"+count).style.backgroundColor = "gray"
     try{
     var num = count-1;
-    var num1 = count+2;
     document.getElementById("cir"+num).style.backgroundColor = "lightgray"
-    document.getElementById("cir"+num1).style.backgroundColor = "lightgray"
     }catch(err){
         //めんどかった。。。。
+    }
+    try{
+        var num1 = count+2;
+        document.getElementById("cir"+num1).style.backgroundColor = "lightgray"
+    }catch(err){
+        //めんどい
     }
         $("#home_photos").animate({
             opacity:1
