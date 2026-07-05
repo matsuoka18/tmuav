@@ -1,4 +1,8 @@
-    var photo_name = ["news-bg.jpg","news2-bg.jpg","home-bg.jpg"];
+document.getElementById("top").addEventListener("click",()=>{
+    location.href = "home.html"
+})
+
+var photo_name = ["news-bg.jpg","news2-bg.jpg","home-bg.jpg"];
     var length = photo_name.length;
     
     var count = 0;
