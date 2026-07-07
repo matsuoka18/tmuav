@@ -588,8 +588,8 @@ display: inline-block;
 .members .block1{
     position: relative;
     left: 10vw;
-    width:35vw;
-    height:20vw;
+    width:20vw;
+    height:32vw;
     margin:0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -603,8 +603,8 @@ display: inline-block;
     display: inline-block;
 }
 .members img{
-    width:20vw;
-    height: 18vw;
+    width:18vw;
+    height: 25vw;
     object-fit: cover;
     object-position: center;
     margin-top:1vw;
@@ -613,24 +613,29 @@ display: inline-block;
 }
 .members .titles{
     position: absolute;
-    top:2vw;
-    right:0;
+    bottom:1.25vw;
+    left:0;
     width:14vw;
 }
 .members .titles p{
     font-size: 1vw;
     font-weight: 500;
-    width:14vw;
     text-align: center;
 }
 .members .titles p:nth-child(1){
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 600;
-    width:14vw;
-    text-align: center;
+    margin:0;
+    margin-left:2vw;
+    margin-bottom:0.5vw;
+    text-align: left;
     color: black;
     letter-spacing: 2px;
     font-family: monospace;
+}
+.members .titles small{
+    margin-left:2vw;
+    
 }
 .members .detail{
     position: absolute;
@@ -648,55 +653,66 @@ display: inline-block;
 
 .pop{
     position: absolute;
-    top:5vw;
-    left:10vw;
-    width:80vw;
-    height:40vw;
+    top:0;
+    left:0;
+    width:35vw;
+    height:42vw;
     background-color: white;
     border-radius: 10px;
     z-index: 1000;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 0 2px 2px #fafafa;
     border: 2px solid #fafafa;
+    display: none;
+    opacity: 0;
 }
 .pop div{
-    display: inline-block;
+    display:block;
 }
 .pop img{
-    width:40vw;
-    height:36vw;
-    aspect-ratio: 16/9;
+    width:33vw;
+    height: 28vw;
     object-fit: cover;
     object-position: center;
+    margin-top:1vw;
+    margin-left:1vw;
     border-radius: 10px;
-    margin-top:2vw;
-    margin-left:2vw;
 }
 .pop .titles{
     position: absolute;
-    top:0;
+    bottom:1vw;
     height:max-content;
-    
+    padding-bottom:0.5vw;
+    width:12vw;
     text-align: center;
-    
+    border-right:2px solid #3f61aa;
 }
 .pop .titles p{
-    width:30vw;
+    width:18vw;
     text-align: left;
+    margin:0;
     margin-left:2vw;
+    font-size:1vw;
 }
+.pop .com{
+    position: absolute;
+    right:1vw;
+    bottom:1vw;
+    font-size:1vw;
+    width:20vw;
+    color:rgb(52, 52, 52);
+    
+}
+
 .pop .titles p:nth-child(1){
-    font-size:2.5vw;
+    font-size:1.5vw;
     font-weight: 600;
     margin-left:2vw ;
-    margin-top:4vw ;
-    text-align: center;
-    line-height: 1vw;
-    border-bottom:15px solid #4366B0;
-    -webkit-text-stroke: 0.1px #4366B0;
-}
-.pop .titles .com p:nth-child(1){
-    font-size:2vw;
-    margin-left:2vw ;
+    padding-top:0.5vw;
+    padding-bottom:0.5vw;
     text-align: left;
+    
+    /*border-bottom:15px solid #80a8ff;*/
+    color:#3f61aa;
 }
+
