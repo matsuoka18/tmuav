@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
     </head>
-    <body>
+    <body onload="start()">
         <style>
             ::-webkit-scrollbar {
              height:0px;   /* 横スクロールなら height */
@@ -24,12 +24,23 @@
                 border-radius: 30px;
             }
         </style>
+        <div id="ph">
+        </div>
+        <img src="./images/img1.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
         <img src="./images/home-bg.jpg" id="">
-        <img src="./images/home-bg.jpg" id="">
+        <script>
+            function start(){
+              var num = 23;
+                for(var i = 1; i < num; i++){
+                  var text = '<img src="./images/img'+i+'.JPG">';
+                  document.getElementById("ph").insertAdjacentHTML("beforeend",text);
+                }
+            }
+        </script>
     </body>
 </html>
