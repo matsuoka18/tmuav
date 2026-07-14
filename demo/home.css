@@ -533,7 +533,17 @@ ul{
 .middle .top_news{
     padding-top:30px;
 }
-.middle .top_news_body .block{
+.middle .top_news_body{
+    position: relative;
+    left:-3vw;
+    height:max-content;
+    width:max-content;
+}
+.middle .top_news_body div{
+    display: inline-block;
+    
+}
+/*.middle .top_news_body .block{
     position:relative;
     width:80vw; 
     background-color: white;
@@ -572,6 +582,7 @@ background-color: #fafafa;
 display: inline-block;
 padding-inline: 10px;
 }
+*/
 .about_us{
     position: relative;
     margin-top:30px;
@@ -724,6 +735,7 @@ font-weight: 700;
 }
 .middle2{
 margin-top:8vw;
+
 }
 
 .new h4{
@@ -735,6 +747,7 @@ padding-left:1.5vw;
 padding-right:1.5vw;
 padding-top:1vw;
 padding-bottom:1vw;
+margin-top:1vw;
 }
 
 .past h4{
